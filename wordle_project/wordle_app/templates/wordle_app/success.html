@@ -1,0 +1,16 @@
+<!-- wordle_app/templates/wordle_app/success.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wordle Game - Success</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .success { font-size: 2em; color: green; }
+    </style>
+</head>
+<body>
+    <h1>Congratulations!</h1>
+    <div class="success">You guessed the word "{{ word }}" in {{ attempts }} attempts!</div>
+    <a href="{% url 'home' %}">Play Again</a>
+</body>
+</html>
